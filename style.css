@@ -243,6 +243,7 @@ body {
 .hero-content {
     max-width: 800px;
     text-align: center;
+    width: 100%;
 }
 
 .hero-title {
@@ -320,11 +321,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .hero-video-container {
     position: relative;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: 350px;
     border-radius: 20px;
     overflow: hidden;
@@ -800,14 +803,42 @@ body {
         padding: 0 1rem;
     }
 
-    .hero-content {
-        grid-template-columns: 1fr;
+    .hero {
+        padding: 80px 1rem;
         gap: 2rem;
-        text-align: center;
+        min-height: auto;
+    }
+
+    .hero-content {
+        max-width: 100%;
     }
 
     .hero-title {
         font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-video-container {
+        height: 250px;
+        margin: 0 1rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
     }
 
     .nav-menu {
@@ -825,10 +856,6 @@ body {
         gap: 2rem;
     }
 
-    .hero-cta {
-        justify-content: center;
-    }
-
     .social-links {
         justify-content: center;
     }
@@ -839,8 +866,37 @@ body {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding: 60px 0.5rem;
+        gap: 1.5rem;
+    }
+
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .hero-video-container {
+        height: 200px;
+        margin: 0 0.5rem;
+        border-radius: 15px;
+    }
+
+    .hero-video {
+        border-radius: 15px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.9rem 1.5rem;
+        font-size: 0.95rem;
     }
 
     .section-title {
@@ -850,5 +906,15 @@ body {
     .portfolio-grid,
     .expertise-grid {
         grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        margin-top: 1.5rem;
+    }
+
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
     }
 }
