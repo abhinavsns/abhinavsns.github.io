@@ -117,9 +117,13 @@ body {
 }
 
 .nav-logo {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
-    color: var(--primary-color);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .nav-menu {
@@ -181,7 +185,7 @@ body {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .social-link {
@@ -448,6 +452,16 @@ body {
 .metric-label {
     color: var(--text-secondary);
     font-weight: 500;
+}
+
+.metric-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.metric-link:hover .metric {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
 }
 
 /* Expertise Section */
