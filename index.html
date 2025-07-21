@@ -1,128 +1,244 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Abhinav Singh</title>
-    <meta charset="utf-8">
-    <link href="css/style.css" type="text/css" rel="stylesheet"></link>
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,400;8..144,600&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,300;0,8..144,400;0,8..144,600;1,8..144,100;1,8..144,300;1,8..144,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <meta content="Abhinav Singh's Website" name="description"></meta>
-    <meta content="Abhinav Singh" name="author"></meta>
-    <meta content="All rights reserved. Copyright 2023-Abhinav Singh" name="copyright"></meta>
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Singh | Deep Tech & Digital Twins Expert</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Abhinav Singh</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#expertise" class="nav-link">Expertise</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+        </div>
+    </nav>
 
-  <body>
-	<div id="main">
-		<div id="header">
-      <img src="face.jpg" alt="Picture of Abhinav">
-      <div id="title">
-        <div id="name-and-contact">
-          <h1> Abhinav Singh </h1>
-          <div id="icons">
-            <a href="https://twitter.com/abhinavsns"><i id="icon" class="fa-brands fa-twitter"></i></a> ·
-            <a href="https://scholar.google.com/citations?user=zHogVvsAAAAJ&hl=en&sortby=pubdate"><i id="icon" class="ai ai-google-scholar"></i></a> ·
-            <a href="mailto:abhinavsns7@gmail.com"><i id="icon" class="fa-solid fa-envelope"></i></a> ·
-            <a href="https://github.com/abhinavsns"><i id="icon" class="fa-brands fa-github"></i></a> ·
-            <a href="https://www.linkedin.com/in/abhinav-singh-89a4b9100/"><i id="icon" class="fa-brands fa-linkedin"></i></a>
-          </div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Deep Tech Innovation Through
+                <span class="gradient-text">Scalable Digital Twins</span>
+            </h1>
+            <p class="hero-subtitle">
+                Researcher and Engineer at Harvard University developing scalable simulation frameworks for active biological matter and physics-informed AI systems
+            </p>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn-primary">View Portfolio</a>
+                <a href="attached_assets/Abhinav_Singh_CV_1753126853021.pdf" class="btn-secondary" target="_blank">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/abhinavsns" class="social-link" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://X.com/abhinavsns" class="social-link" target="_blank" aria-label="X (Twitter)">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=abhinav" class="social-link" target="_blank" aria-label="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="https://github.com/abhinavsns" class="social-link" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
         </div>
-        <p id="intro"> 
-I am a Predoc at <b>Center for Systems Biology, Dresden</b>. I am currently working on <b>High-Performance Numerical Simulations</b> of <b>Active Mattter</b> in <b>3D complex geometries</b>.  
- </p>
-      </div>
-    </div>
+        <div class="hero-visual">
+            <div class="digital-twin-animation">
+                <div class="twin-node active"></div>
+                <div class="twin-node"></div>
+                <div class="twin-node"></div>
+                <div class="connection-line"></div>
+                <div class="data-flow"></div>
+            </div>
+        </div>
+    </section>
 
-		<div id="nav">
-      <a href="#news">News</a>
-      · <a href="#publications">Publications</a>
-      <!-- · <a href="">Blog</a> · -->
-      <!-- · <a href="#">CV</a> -->
-    </div>
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        Postdoctoral Fellow in Applied Mathematics at Harvard University with PhD in Computer Science (Summa Cum Laude) from International Max Planck Research School. 
+                        Specializing in scalable 3D simulations of active biological matter, physics-informed AI, and high-performance computing for PDE solvers.
+                        I am interested in advancing the frontiers of digital twin technology through innovative simulation frameworks and machine learning techniques.
+                    </p>
+                    <div class="key-metrics">
+                        <div class="metric">
+                            <span class="metric-number">8</span>
+                            <span class="metric-label">Peer-Reviewed Publications</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-number">15+</span>
+                            <span class="metric-label">Media Coverage Articles</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-number">50</span>
+                            <span class="metric-label">Citations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<div id="news" class="content-left middle-section">
-      <!-- <h2>News</h2> -->
-        <ul>
-          <li> <b>I will be giving a talk at the APS March Meeting 2023 on</b> Spontaneous Flows in 3D active matter <i>on Nov 28 2022</i></li>
-          <li> <b>I gave a talk at US National Congress on Theoretical and Applied Mechanics.</b> <i>in June 2022</i>
-          <li> <b>I gave a talk at University of Michigan.</b> <i>in June 2022</i>
-          <li> <b>I became a RoSI fellow with DFG Fellowship and started PhD at the IMPRS Cell-Devo-Sys</b> <i>on 19 August 2019</i></li>
-        </ul>
-    </div>
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <h2 class="section-title">Core Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card featured">
+                    <div class="card-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Biological Active Matter Simulations</h3>
+                    <p>Scalable 3D simulations of active biological matter using provable Machine Learning techniques, achieving 5x performance improvements in complex geometries.</p>
+                    <ul class="tech-list">
+                        <li>Turbulence in Living Systems</li>
+                        <li>Multi-GPU Computing</li>
+                        <li>Scalable Computing Frameworks</li>
+                        <li>Distributed PDE Solvers</li>
+                    </ul>
+                </div>
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>High-Performance Computing</h3>
+                    <p>Distributed computing on heterogeneous architectures with 
+                    expertise in C++, Python, and GPU acceleration using CUDA.</p>
+                </div>
 
-		<div id="publications" class="content-left">
-      <h2>Publications</h2>
-      
-      <div id="publication">
-        <div id="publication-image">
-          <img src="publication/sdcpse/feat.png" alt="Image from Mesh-free collocation for surface differential operators.">
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Physics-Informed ML</h3>
+                    <p>Reinforcement learning coupled with PDE solvers for control 
+                       of active fluids, reducing algorithm complexity from O(n³) to O(n²).</p>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Computational Biology</h3>
+                    <p>Multi-physics modeling of biological systems including neural networks, 
+                       active nematic droplets, and cytoskeletal materials.</p>
+                </div>
+            </div>
         </div>
-        <div id="publication-content">
-          <div id="publication-header">
-            <a href="https://arxiv.org/pdf/2205.10898.pdf">
-              <h3> Mesh-free collocation for surface differential operators </h3>
-            </a>
-            <i> Abhinav Singh, Ale Foggia, Pietro Incardona, Ivo F. Sbalzarini </i>
-            <br/>
-            <p><b>ArXiv Preprint, 2022 </b></p>
-          </div>
-          <div id="publication-links">
-            
-              <div id="publication-link"><a href="https://arxiv.org/pdf/2205.10898.pdf"><i class="fa-solid fa-file-pdf"></i> Paper </a></div>
-            
-          </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio Highlights</h2>
+            <div class="portfolio-grid">
+                <div class="project-card flagship">
+                    <div class="project-header">
+                        <h3>3D Active Matter Solver</h3>
+                        <span class="project-tag">Harvard - Max Planck Research</span>
+                    </div>
+                    <p>Scalable numerical solver for active hydrodynamics in three dimensions, 
+                    featured as cover article in Physics of Fluids with extensive media coverage.</p>
+                    <div class="project-metrics">
+                        <span class="metric">5x Performance</span>
+                        <span class="metric">70% Dev Time ↓</span>
+                        <span class="metric">O(n²) Complexity</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">OpenFPM</span>
+                        <span class="tech-tag">Multi-GPU</span>
+                        <span class="tech-tag">C++ Expression System</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Active Nematic Droplets</h3>
+                        <span class="project-tag">Physical Review X</span>
+                    </div>
+                    <p>Experimental-theoretical collaboration on 3D active nematic droplets, 
+                       confirming theoretical predictions with high-precision modeling.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Active Matter</span>
+                        <span class="tech-tag">3D Modeling</span>
+                        <span class="tech-tag">Experimental Validation</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Reinforcement Learning + PDEs</h3>
+                        <span class="project-tag">Harvard CSE-LAB</span>
+                    </div>
+                    <p>Large-scale reinforcement learning acceleration using Korali framework 
+                       for control of active fluids and neural network simulations.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Korali Framework</span>
+                        <span class="tech-tag">Fitz-Nagumo Model</span>
+                        <span class="tech-tag">Neural Networks</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      
-      <div id="publication">
-        <div id="publication-image">
-          <img src="publication/c++/feat.png" alt="Image from A C++ expression system for partial differential equations enables generic simulations of biological hydrodynamics.">
+    </section>
+
+    
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Build the Future</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ready to chat?</h3>
+                    <p>Advancing scalable simulation technologies for humanity.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>abhinavsns7@gmail.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/abhinavsns</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Harvard CSE-LAB, Cambridge</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-cta">
+                    <a href="mailto:abhinavsns7@gmail.com" class="btn-primary large">
+                        <i class="fas fa-handshake"></i>
+                        Email Me
+                    </a>
+                </div>
+            </div>
         </div>
-        <div id="publication-content">
-          <div id="publication-header">
-            <a href="https://link.springer.com/article/10.1140/epje/s10189-021-00121-x">
-              <h3> A C++ expression system for partial differential equations enables generic simulations of biological hydrodynamics </h3>
-            </a>
-            <i> Abhinav Singh, Pietro Incardona, Ivo F. Sbalzarini </i>
-            <br/>
-            <p><b>Advances in Computational methods for biological physics - The European Physical Journal E , 2021 </b></p>
-          </div>
-          <div id="publication-links">
-            
-              <div id="publication-link"><a href="https://link.springer.com/article/10.1140/epje/s10189-021-00121-x"><i class="fa-solid fa-file-pdf"></i> Paper </a></div>
-            
-          </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Abhinav Singh. Deep Tech Innovation in Digital Twins.</p>
         </div>
-      </div>
-      
-      <div id="publication">
-        <div id="publication-image">
-          <img src="publication/dna/feat.png" alt="Image from A reaction network scheme which implements inference and learning for hidden Markov models.">
-        </div>
-        <div id="publication-content">
-          <div id="publication-header">
-            <a href="https://arxiv.org/abs/1906.09410">
-              <h3> A reaction network scheme which implements inference and learning for hidden Markov models </h3>
-            </a>
-            <i> Abhinav Singh*, Abhishek Behra, Carsten Wiuf, Manoj Gopalkrishnan </i>
-            <br/>
-            <p><b>Conference paper and talk at the DNA25 conference, Jinan, China, 2019 </b></p>
-          </div>
-          <div id="publication-links">
-            
-              <div id="publication-link"><a href="https://arxiv.org/abs/1906.09410"><i class="fa-solid fa-file-pdf"></i> Paper </a></div>
-            
-          </div>
-        </div>
-      </div>
-      
-		</div>
-    <div id="footer"><p> © 2023 Abhinav Singh </p></div>
-	  </div>
-  </body>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
