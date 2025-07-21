@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -223,8 +222,11 @@ body {
 .hero {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 140px 2rem 80px;
+    padding: 100px 2rem;
+    gap: 4rem;
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
     position: relative;
     overflow: hidden;
@@ -235,12 +237,8 @@ body {
 }
 
 .hero-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    max-width: 800px;
+    text-align: center;
 }
 
 .hero-title {
@@ -269,9 +267,11 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
     padding: 1rem 2rem;
     border-radius: 8px;
     text-decoration: none;
@@ -311,11 +311,27 @@ body {
     font-size: 1.1rem;
 }
 
-/* Digital Twin Animation */
+/* Hero Video and Digital Twin Animation */
 .hero-visual {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hero-video-container {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .digital-twin-animation {
@@ -358,8 +374,17 @@ body {
 }
 
 @keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.1); opacity: 0.8; }
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
 }
 
 /* Section Styles */
@@ -371,7 +396,11 @@ body {
     color: var(--text-primary);
 }
 
-.about, .expertise, .portfolio, .investment, .contact {
+.about,
+.expertise,
+.portfolio,
+.investment,
+.contact {
     padding: 100px 0;
 }
 
@@ -582,6 +611,54 @@ body {
     border: 1px solid var(--border-color);
 }
 
+/* Link styles for cards and expertise */
+.card-link,
+.project-title-link,
+.project-description-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card-link:hover,
+.project-title-link:hover {
+    color: var(--primary-color);
+}
+
+.project-description-link:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+.tag-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.tag-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.tech-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.tech-link:hover {
+    color: var(--primary-color);
+}
+
+.tech-tag .tech-link:hover {
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .card-link:hover,
+[data-theme="dark"] .project-title-link:hover,
+[data-theme="dark"] .tech-link:hover {
+    color: var(--primary-color);
+}
+
 /* Investment Section */
 .investment {
     background: var(--bg-secondary);
@@ -594,7 +671,8 @@ body {
     align-items: start;
 }
 
-.market-size h3, .value-proposition h3 {
+.market-size h3,
+.value-proposition h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
@@ -707,40 +785,40 @@ body {
     .container {
         padding: 0 1rem;
     }
-    
+
     .hero-content {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .nav-menu {
         display: none;
     }
-    
+
     .expertise-card.featured,
     .project-card.flagship {
         grid-column: span 1;
     }
-    
+
     .investment-content,
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .hero-cta {
         justify-content: center;
     }
-    
+
     .social-links {
         justify-content: center;
     }
-    
+
     .key-metrics {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
@@ -750,11 +828,11 @@ body {
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .portfolio-grid,
     .expertise-grid {
         grid-template-columns: 1fr;
