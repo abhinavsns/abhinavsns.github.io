@@ -1,284 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhinav Singh | Deep Tech & Digital Twins</title>
-    <link href="./style.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Abhinav Singh | Digital Twin Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">Abhinav Singh</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#expertise" class="nav-link">Expertise</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                <i class="fas fa-moon" id="themeIcon"></i>
-            </button>
-        </div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="hero-visual">
-            <div class="hero-video-container">
-                <video autoplay muted loop playsinline class="hero-video">
-                    <source src="attached_assets/cells.mp4" type="video/mp4">
-                    <!-- Fallback animation for browsers that don't support video -->
-                    <div class="digital-twin-animation">
-                        <div class="twin-node active"></div>
-                        <div class="twin-node"></div>
-                        <div class="twin-node"></div>
-                        <div class="connection-line"></div>
-                        <div class="data-flow"></div>
+    <header class="site-header">
+        <div class="page-wrap">
+            <nav class="top-nav" aria-label="Main">
+                <a class="brand" href="/">Abhinav Singh</a>
+                <div class="nav-actions">
+                    <div class="nav-links single">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                        <a href="https://substack.com/@abhinavsns" class="nav-link" target="_blank" rel="noopener">Blog</a>
                     </div>
-                </video>
+                    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme"></button>
+                </div>
+            </nav>
+            <div class="hero">
+                <p class="eyebrow"><a href="https://functoris.com" target="_blank" rel="noopener">Currently building Functoris</a></p>
+                <h1>Obsessed with software, science, and how computation explains the world.</h1>
+                <p class="hero-subtitle">I build scalable simulation tools to watch intelligence emerge, one digital twin at a time.</p>
             </div>
         </div>
-        <div class="hero-content">
-            <h1 class="hero-title">
-                Deep Tech Innovation Through
-                <span class="gradient-text">Scalable Digital Twins</span>
-            </h1>
-            <p class="hero-subtitle">
-                Researcher and Engineer at Harvard University developing scalable simulation frameworks for active
-                biological matter and physics-informed AI systems
-            </p>
-            <div class="hero-cta">
-                <a href="#portfolio" class="btn-primary">View Portfolio</a>
-                <a href="attached_assets/Abhinav_Singh_CV_1753126853021.pdf" class="btn-secondary" target="_blank">
-                    <i class="fas fa-download"></i> Download CV
-                </a>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="page-wrap narrow prose">
+                <p>I grew up pulling apart Pentium 4 beige desktop towers in India, convinced that the right piece of silicon could unlock new worlds. When I finally saved for a GPU in 2009 (NVIDIA 9400 GT), games became experiments: sliders turned into differential equations, frame rates hinted at dynamics, and I drifted toward pure math just to keep up with my own questions about motion and intelligence.</p>
+                <p>That restlessness carried me into interdisciplinary labs where I translated biological physics—the equations of life—into code. I started by building <a href="https://arxiv.org/pdf/1906.09410" target="_blank" rel="noopener">chemical computing agents</a> and developing CUDA-accelerated reaction kinetics simulators. On the side, I built in-silico DNA nanomachines implementing AI-like algorithms. My PhD work focused on scaling numerical algorithms and <a href="https://phys.org/news/2023-11-code-mechanics-tissues-cells-dimensions.html" target="_blank" rel="noopener">solvers</a> for active matter that matched <a href="https://phys.org/news/2024-10-scientists-unprecedented.html" target="_blank" rel="noopener">experimental data</a> and hinted at why biological cells could be spherical. Later I shipped GPU-heavy reinforcement learning tooling at <a href="https://arxiv.org/abs/2507.19298" target="_blank" rel="noopener">Harvard CSE-Lab</a> and published research on <a href="https://scholar.google.com/citations?user=zHogVvsAAAAJ&hl=en" target="_blank" rel="noopener">living-fluid physics</a>, because building the system always taught me more than describing it.</p>
+                <p>Today that philosophy is becoming <a href="https://functoris.com" target="_blank" rel="noopener">Functoris</a>. An agentic framework that takes natural language description of the physics and converts it into high-performance simulation kernels. Ultimately this is infrastructure for automated science—letting ideas move from prompts to rigorous experiments without the handoffs that slow discovery today.</p>
             </div>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/abhinavsns" class="social-link" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://twitter.com/abhinavsns" class="social-link" target="_blank" aria-label="X (Twitter)">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://scholar.google.com/citations?user=zHogVvsAAAAJ&hl=en" class="social-link" target="_blank"
-                    aria-label="Google Scholar">
-                    <i class="fas fa-graduation-cap"></i>
-                </a>
-                <a href="https://github.com/abhinavsns" class="social-link" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="lead">
-                        Postdoctoral Fellow in Applied Mathematics at Harvard University with PhD in Computer Science
-                        (Summa Cum Laude) from International Max Planck Research School.
-                        Specializing in scalable 3D simulations of active biological matter, physics-informed AI, and
-                        high-performance computing for PDE solvers.
-                        I am interested in advancing the frontiers of digital twin technology through innovative
-                        simulation frameworks and machine learning techniques.
-                    </p>
-                    <div class="key-metrics">
-                        <a href="https://orcid.org/0000-0003-2180-8423" target="_blank" class="metric-link">
-                            <div class="metric">
-                                <span class="metric-number">8</span>
-                                <span class="metric-label">Peer-Reviewed Publications</span>
-                            </div>
-                        </a>
-                        <a href="https://www.altmetric.com/details/155905104/news" target="_blank" class="metric-link">
-                            <div class="metric">
-                                <span class="metric-number">15+</span>
-                                <span class="metric-label">Media Coverage Articles</span>
-                            </div>
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=zHogVvsAAAAJ&hl=en" target="_blank" class="metric-link">
-                            <div class="metric">
-                                <span class="metric-number">50</span>
-                                <span class="metric-label">Citations</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="expertise" class="expertise">
-        <div class="container">
-            <h2 class="section-title">Core Expertise</h2>
-            <div class="expertise-grid">
-                <div class="expertise-card featured">
-                    <div class="card-icon">
-                        <i class="fas fa-cube"></i>
-                    </div>
-                    <h3><a href="https://phys.org/news/2023-11-code-mechanics-tissues-cells-dimensions.html" target="_blank"
-                            class="card-link">Biological Active Matter Simulations</a></h3>
-                    <p>Scalable 3D simulations of active biological matter using provable Machine Learning techniques,
-                        achieving 5x performance improvements in complex geometries.</p>
-                    <ul class="tech-list">
-                        <li><a href="https://www.youtube.com/watch?v=-dCBcsDM8qY" target="_blank"
-                                class="tech-link">Turbulence in Living Systems</a></li>
-                        <li><a href="https://arxiv.org/abs/2309.05331" target="_blank" class="tech-link">Multi-GPU Computing</a></li>
-                        <li><a href="https://openfpm.mpi-cbg.de/" target="_blank" class="tech-link">Scalable Computing Frameworks</a></li>
-                        <li><a href="https://link.springer.com/article/10.1140/epje/s10189-021-00121-x" target="_blank" class="tech-link">Distributed PDE Solvers</a></li>
-                    </ul>
-                </div>
-                <div class="expertise-card">
-                    <div class="card-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3><a href="https://github.com/abhinavsns" target="_blank" class="card-link">High-Performance
-                            Computing</a></h3>
-                    <p>Distributed computing on heterogeneous architectures with
-                        expertise in C++, Python, and GPU acceleration using CUDA.</p>
-                </div>
-
-                <div class="expertise-card">
-                    <div class="card-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3><a href="https://www.csbdresden.de/news-events/news/article/taming-the-complexities-of-curved-surfaces-218" target="_blank"
-                            class="card-link">Physics-Informed ML</a></h3>
-                    <p>Reinforcement learning coupled with PDE solvers for control
-                        of active fluids, reducing algorithm complexity from O(n³) to O(n²).</p>
-                </div>
-
-                <div class="expertise-card">
-                    <div class="card-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3><a href="https://phys.org/news/2024-10-scientists-unprecedented.html" target="_blank"
-                            class="card-link">Unprecedented Computational Biology</a></h3>
-                    <p>Multi-physics modeling of biological systems including neural networks,
-                        active nematic droplets, and cytoskeletal materials.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="section-title">Portfolio Highlights</h2>
-            <div class="portfolio-grid">
-                <div class="project-card flagship">
-                    <div class="project-header">
-                        <h3><a href="https://pubs.aip.org/aip/pof/article-split/35/10/105155/2919100/A-numerical-solver-for-active-hydrodynamics-in" target="_blank"
-                                class="project-title-link">3D Active Matter Solver</a></h3>
-                        <span class="project-tag"><a href="https://www.eurekalert.org/news-releases/969564"
-                                target="_blank" class="tag-link">Harvard - Max Planck Research</a></span>
-                    </div>
-                    <p><a href="https://pubs.aip.org/aip/pof/article-split/35/10/105155/2919100/A-numerical-solver-for-active-hydrodynamics-in" target="_blank"
-                            class="project-description-link">Scalable numerical solver for active hydrodynamics in three
-                            dimensions,
-                            featured as cover article in Physics of Fluids with extensive media coverage.</a></p>
-                    <div class="project-metrics">
-                        <span class="metric">5x Performance</span>
-                        <span class="metric">70% Dev Time ↓</span>
-                        <span class="metric">O(n²) Complexity</span>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-tag"><a href="https://mosaic-group.github.io/openfpm-website/" target="_blank"
-                                class="tech-link">OpenFPM</a></span>
-                        <span class="tech-tag">Multi-GPU</span>
-                        <span class="tech-tag">C++ Expression System</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3><a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.14.041002" target="_blank"
-                                class="project-title-link">Active Nematic Droplets</a></h3>
-                        <span class="project-tag"><a
-                                href="https://phys.org/news/2024-10-scientists-unprecedented.html" target="_blank"
-                                class="tag-link">Physical Review X</a></span>
-                    </div>
-                    <p><a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.14.041002" target="_blank"
-                            class="project-description-link">Experimental-theoretical collaboration on 3D active nematic
-                            droplets,
-                            confirming theoretical predictions with high-precision modeling.</a></p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Active Matter</span>
-                        <span class="tech-tag">3D Modeling</span>
-                        <span class="tech-tag">Experimental Validation</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3><a href="https://www.sciencedirect.com/science/article/pii/S0045782521005752" target="_blank"
-                                class="project-title-link">Reinforcement Learning + PDEs</a></h3>
-                        <span class="project-tag"><a href="https://cse-lab.seas.harvard.edu/" target="_blank"
-                                class="tag-link">Harvard CSE-LAB</a></span>
-                    </div>
-                    <p><a href="https://www.sciencedirect.com/science/article/pii/S0045782521005752" target="_blank"
-                            class="project-description-link">Large-scale reinforcement learning acceleration using
-                            Korali framework
-                            for control of active fluids and neural network simulations.</a></p>
-                    <div class="tech-stack">
-                        <span class="tech-tag"><a href="https://www.sciencedirect.com/science/article/pii/S0045782521005752" target="_blank"
-                                class="tech-link">Korali Framework</a></span>
-                        <span class="tech-tag">Fitz-Nagumo Model</span>
-                        <span class="tech-tag">Neural Networks</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Build the Future</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Ready to chat?</h3>
-                    <p>Advancing scalable simulation technologies for humanity.</p>
-
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <span>abhinav@g.harvard.edu</span>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fab fa-linkedin"></i>
-                            <span>linkedin.com/in/abhinavsns</span>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span><a href="https://cse-lab.seas.harvard.edu/" target="_blank" style="color: inherit; text-decoration: none;">Harvard CSE-LAB, Cambridge</a></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-cta">
-                    <a href="mailto:abhinav@g.harvard.edu" class="btn-primary large">
-                        <i class="fas fa-handshake"></i>
-                        Email Me
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Abhinav Singh. Deep Tech Innovation in Digital Twins.</p>
+    <footer class="site-footer">
+        <div class="page-wrap">
+            <p>Contact: <a href="mailto:abhinavsns@gmail.com">Email</a></p>
+            <p class="small-print"><a href="https://github.com/abhinavsns" target="_blank" rel="noopener">GitHub</a> · <a href="https://scholar.google.com/citations?user=zHogVvsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
+            <p class="small-print">&copy; <span id="currentYear"></span> Abhinav Singh</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
-
 </html>

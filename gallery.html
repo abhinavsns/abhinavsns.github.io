@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Simulation Gallery | Abhinav Singh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="page-wrap">
+            <nav class="top-nav" aria-label="Main">
+                <a class="brand" href="/">Abhinav Singh</a>
+                <div class="nav-actions">
+                    <div class="nav-links single">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="https://substack.com/@abhinavsns" class="nav-link" target="_blank" rel="noopener">Blog</a>
+                    </div>
+                    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme"></button>
+                </div>
+            </nav>
+            <div class="hero">
+                <p class="eyebrow">Snapshots from my simulation work</p>
+                <h1>Simulation Gallery</h1>
+                <p class="lead">I document the digital twin experiments that keep me up at night—streamlines, oscillations, and active materials that refuse to behave like passive fluids.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section soft">
+            <div class="page-wrap">
+                <div class="gallery-grid">
+                    <article class="gallery-card">
+                        <video controls preload="metadata">
+                            <source src="attached_assets/cells.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="gallery-card-body">
+                            <h2>Active Cells in Motion</h2>
+                            <p>A simulation where energy-consuming agents carve complex currents. It’s part of my research on scaling 3D solvers that bridge theory and experiment.</p>
+                        </div>
+                    </article>
+                    <article class="gallery-card">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-dCBcsDM8qY?si=r24Wlv44_Q8mn9fk;start=3" title="Turbulence in Living Systems" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="gallery-card-body">
+                            <h2>Turbulence in Living Systems</h2>
+                            <p>A 3 minute teaser on what my research enables.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    <footer class="site-footer">
+        <div class="page-wrap">
+            <p>Building digital twins for the next decade of science.</p>
+            <p class="small-print">&copy; <span id="currentYear"></span> Abhinav Singh</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
